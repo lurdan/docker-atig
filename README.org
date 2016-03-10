@@ -1,0 +1,12 @@
+* docker-atig
+
+runs atig - twitter irc gateway.
+
+** Usage
+
+#+BEGIN_SRC sh
+cp -r /path/to/your/.atig ./data/
+docker build -t lurdan/atig .
+docker run -d -p 16668:16668 -v $(pwd)/data:/data lurdan/atig
+#+END_SRC
+
